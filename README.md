@@ -15,11 +15,24 @@ Befor start：能用安卓用安卓，简单易操作。
 
 可以apple store 或者https://developer.apple.com/download/。
 
-1.5wda安装编译：可选。
+1.5wda安装编译：非必要。
 
-因为facebook的web-drive-agent是核心，但是年久失修有些问题，可以参考https://testerhome.com/topics/7220进行wda的安装编译，成功查看status/insepector后可以初步连接控制手机，但是大概率会遇到问题。
-
+因为facebook的web-drive-agent是核心，但是年久失修有些问题，可以参考https://testerhome.com/topics/7220 进行wda的安装编译，成功查看status/insepector后可以初步连接控制手机。
+但是大概率会遇到问题。
 不过验证了除wda的正确性。
 
 2appium自带wda，较新版本的wda和老攻略的地址不一样。1.17的wda地址（安装在
-application）：/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent而不是老攻略的 /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver/
+application）：/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent 而不是老攻略的 /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-xcuitest-driver 。
+
+下载：先安装 homebrew：包管理
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+安装carthage:
+brew install carthage
+
+转到 wda路径：
+cd /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent  #记得改成 WDA 的目录
+./Scripts/bootstrap.sh。
+
+
+
