@@ -27,12 +27,26 @@ application）：/Applications/Appium.app/Contents/Resources/app/node_modules/ap
 下载：先安装 homebrew：包管理
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-安装carthage:
+安相关包:
+//node
+brew install node
+//npm
+brew install npm
+//carthage
 brew install carthage
+//libimobiledevice(真机测试需要)
+brew install libimobiledevice
+//ios-deploy(真机测试需要)
+brew install ios-deploy
+//python （Mac下默认是2.7版本 ）
+brew install python
+
 
 转到 wda路径：
 cd /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent  #记得改成 WDA 的目录
 ./Scripts/bootstrap.sh。
 
+安装facebook-wda：pip3 install --pre facebook-wda
+安装appium python库：
 
 
